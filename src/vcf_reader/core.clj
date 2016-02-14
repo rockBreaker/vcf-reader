@@ -45,7 +45,7 @@
      adds)))
 
 (defn vname 
-  [vard]
+  [vcard]
   (when-let [vname (.getStructuredName vcard)]
     {:first-name  (.getGiven vname)
      :last-name   (.getFamily vname)
@@ -65,6 +65,4 @@
   (let [vreader (vreader vcf-file)
         vcards (.readAll vreader)]
     (map information vcards)))
-
-
 
