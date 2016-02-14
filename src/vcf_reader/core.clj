@@ -52,7 +52,6 @@
      :title       (.getPrefixes vname)}))
 
 (defn information 
-"we could start with a base map, then -> merge all new maps"
   [vcard]
   {:name             (vname vcard)
    :email            (emails vcard)
@@ -68,10 +67,4 @@
     (map information vcards)))
 
 
-;;name
-;;first name
-;;last name
-;;telephone
-;;mobile
-;;address
-;;getCategories
+
